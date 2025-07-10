@@ -19,6 +19,11 @@ FROM node:24-alpine AS runner
 # Set working directory
 WORKDIR /app
 
+# Add a dev user for security
+RUN addgroup -S dev && adduser -S dev -G dev
+
+USER dev
+
 # Copy only needed files from builder
 COPY --from=builder /build .
 
