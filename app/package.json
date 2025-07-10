@@ -1,0 +1,12 @@
+{
+  "name": "ecs-node-app",
+  "version": "1.0.0",
+  "description": "Tiny Node app to test ECS deployment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
